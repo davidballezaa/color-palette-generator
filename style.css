@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.generator__form {
+  height: 90px;
+}
+
+.generator__body {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.colorElement {
+  height: calc(100vh - 90px);
+}
+
+.element__color {
+  height: calc(100% - 46px);
+}
