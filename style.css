@@ -51,12 +51,7 @@ select {
 }
 
 .element__color {
-  cursor: pointer;
   height: calc(100% - 46px);
-}
-
-.element__color:hover {
-  opacity: 0.9;
 }
 
 .element__value {
