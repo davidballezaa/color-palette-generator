@@ -19,6 +19,7 @@ select {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .generator__form > * {
@@ -61,4 +62,51 @@ select {
   justify-content: center;
   font-size: 14px;
   font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  .generator__form {
+    height: 80px;
+  }
+
+  .generator__form > * {
+    height: 25px;
+    font-size: 11px;
+  }
+
+  .generator__body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .colorElement {
+    height: calc((100vh / 5) - (80px / 5));
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .element__color {
+    width: 100%;
+    height: 100%;
+  }
+
+  .element__value {
+    height: 100%;
+    width: 30px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 10px;
+  }
+
+  select {
+    width: 100px;
+  }
+}
+
+@media (max-height: 625px) and (max-width: 500px) {
+  .element__value {
+    writing-mode: initial;
+    text-orientation: initial;
+    width: 80px;
+  }
 }
